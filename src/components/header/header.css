@@ -1,0 +1,46 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.logo{
+    width: 10rem;
+    height: 2rem;
+    object-fit: contain;
+}
+
+.navlist ul{
+    display: flex;
+    list-style: none;
+}
+.navlist ul li{
+    margin-right: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.navlist ul li:hover{
+    color:var(--orange);
+}
+
+
+@media screen and (max-width:768px) {
+   
+    .navlist ul{
+        display: block;
+        flex-direction: column;
+        background-color: rgb(105, 104, 103);
+        padding: 20px;
+        margin-top: 50px;
+        width: 200px;
+        right: 2rem;
+        border-radius: 10px;   
+    }
+    .navlist ul li{
+        margin-right: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        
+    }
+    
+}
+

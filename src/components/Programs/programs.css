@@ -1,0 +1,79 @@
+.Programs{
+    padding: 0rem 2rem;
+}
+
+.Programs .Programs-heading h2{
+    font-size: 2.4rem;
+    color: white;
+    /* text-transform: uppercase; */
+}
+
+.programs-categories{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    
+}
+@media screen and (max-width:576px) {
+    .Programs{
+        padding-top: 100px;
+    }
+    .programs-categories{
+        grid-template-columns: repeat(1,1fr);
+      
+    }  
+}
+
+@media screen and (min-width:577px) and (max-width:991px) {
+    .programs-categories{
+        grid-template-columns: repeat(2,1fr);
+      
+    }  
+
+}
+
+
+.programs-categories .category{
+    background-color: rgb(56, 56, 56);
+    display: flex;
+    color: white;
+    /* justify-content: center; */
+    flex-direction: column;
+   transition: 0.3s ease;
+    padding: 20px 20px;
+    border-radius: 5px;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+.programs-categories .category:hover{
+    background: var( --planCard);
+}
+
+.category h2{
+    font-weight: 500;
+    font-weight: 10rem;
+}
+.category p{
+    font-weight: 200 !important;
+    font-size: 14px;
+}
+.category .join-now {
+    display: flex;
+    
+    justify-content: space-between;
+}
+.category .join-now img{
+height: 12px;
+object-fit: contain;
+
+}
+.category .join-now span{
+    font-size: 14px;
+}
+.category>:nth-child(1){
+    fill: white;
+    height: 28px;
+    width: 28px;
+}
+
+

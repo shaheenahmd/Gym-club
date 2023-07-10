@@ -1,0 +1,54 @@
+.reason{
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content:space-between;
+    gap: 5rem;
+    
+}
+
+@media screen and (max-width:576px) {
+    .reason{
+        
+        flex-direction: column;
+    
+    }
+}
+    
+
+.reason .re-left{
+flex: 2;
+display: flex;
+
+}
+.reason .re-left>img{
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+   
+}
+
+
+.reason .re-right{
+    flex: 2 ;
+    display: flex;
+    flex-direction: column;
+}
+.reason .re-right h2{
+    font-size: 2rem;
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+.line{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    color: white;
+}
+.line img{
+    width: 30px;
+}
+.line p{
+    margin-top: 10px;
+}
+
